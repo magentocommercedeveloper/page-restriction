@@ -1,0 +1,29 @@
+{
+    "name": "ssquare/restrict",
+    "description": "Magento 2 module to restrict access to certain pages unless the customer is logged in.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Shahid Taj",
+            "email": "your-email@example.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.4.0||~8.0.0||~8.1.0||~8.2.0",
+        "magento/framework": "^103.0.0",
+        "magento/module-backend": "^103.0.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ssquare\\Restrict\\": ""
+        }
+    }
+}

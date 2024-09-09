@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- Define the SSQUARE top-level menu -->
+        <add id="Ssquare_Restrict::ssquare_menu"
+             title="SSQUARE"
+             module="Ssquare_Restrict"
+             sortOrder="10"
+             resource="Ssquare_Restrict::ssquare_menu"
+             action="adminhtml/system_config/edit/section/page_restrictions_section" />
+
+        <!-- Define the Page Restrictions submenu -->
+        <add id="Ssquare_Restrict::page_restrictions"
+             title="Page Restrictions"
+             module="Ssquare_Restrict"
+             sortOrder="10"
+             parent="Ssquare_Restrict::ssquare_menu"
+             action="adminhtml/system_config/edit/section/page_restrictions_section"
+             resource="Ssquare_Restrict::page_restrictions"/>
+    </menu>
+</config>
